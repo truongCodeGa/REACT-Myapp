@@ -1,0 +1,68 @@
+/*Bài 12: Tìm hiểu 2 cách styles cơ bản trong React*/
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.app {
+  background-color: rgba(149, 157, 165, 0.2);
+}
+.youtube-list {
+  display: grid; /*chia deu cac item*/
+  grid-template-columns: repeat(5, 1fr); /* 4 item trong 1 hang*/
+  grid-gap: 20px; /*khoang cach giua cac item*/
+  padding: 5px;
+}
+.youtube-image {
+  height: 250px;
+  margin-bottom: 15px;
+}
+.youtube-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.youtube-footer {
+  /*3 thuoc tinh nay di vs nhau*/
+  display: flex;
+  align-items: flex-start;
+  gap: 0 10px;
+}
+.youtube-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.youtube-title {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
